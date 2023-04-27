@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>vaidaslamanauskas.com</title>
+<style>
+body {
+  font-family: monospace
+}
+</style>
+</head>
+<body>
+helping paris city dwellers consume more sustainably at <a href="https://yuba.world/" target="_blank">yuba</a>
+<br><br>
+promoting non-profit design sector w/ <a href="https://invisibledirectory.org/" target="_blank">invisible directory</a>
+<br><br>
+helped connect people with landscapes they may want to keep wild at <a href="https://www.conserve.org/" target="_blank">conserve.org</a>
+<br><br>
+to get in touch regarding a project, <a href="mailto:vaidaslamanauskas@gmail.com">email</a> is the move
+<br><br>
+it might be kind of you to <button>save the world</button>
+<script>
+document.querySelector('button').addEventListener('click', e => {
+  e.target.innerText = 'saving...'
+  setTimeout(() => {
+    e.target.innerText = 'saved'
+    e.target.disabled = true
+    console.log('our planet has been saved .. thx')
+  }, 2000);
+})
+window.onblur = function() { document.title = ":(" }
+window.onfocus = function() { document.title = ":)" }
+</script>
