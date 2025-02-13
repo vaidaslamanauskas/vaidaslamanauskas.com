@@ -1,29 +1,95 @@
 <html>
 <head>
-<title>vaidaslamanauskas.com</title>
 <style>
-img {
-  width: 150px;
+@font-face {
+  font-family: "Rounded";
+  src: url("ABCDiatypeRoundedMono-Regular.woff2") format("woff2");
 }
-marquee {
-  transform: rotate(3deg);
+* {
+  font-family: "Rounded";
+  font-size: 9pt;
+  font-weight: 400;
+  line-height: 1.35;
+  text-transform: lowercase;
+}
+body {
+  margin: 25px;
+  max-width: 600px;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+body>marquee {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: rotate(-5deg);
+  pointer-events: none;
+}
+div {
+  width: 350px;
+  height: 445px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+div>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+div>marquee>img {
+  width: 200px;
+}
+div>marquee:nth-of-type(2)>img {
+  transform: scale(-1, 1);
+}
+div>marquee:not(:first-of-type) {
+  margin-top: -75px;
 }
 </style>
 </head>
 <body>
-designer based in south caucasus.
-<br/><br/>
-currently busy.
-<br/><br/>
-check out <a href="https://yuba.world/">yuba</a> if you're around paris.
-<br/><br/>
-wanna say hi? <a href="mailto:vaidas.lamanauskas@gmail.com">email</a> is the move.
-<br/><br/>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ch_23IsRrL8?si=WGLCnBfqEzUBONhO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<marquee direction="right" scrollamount="4">
-<img src="pigeon.gif">
-</marquee>
-<script>
-window.onblur = function() { document.title = ":(" }
-window.onfocus = function() { document.title = ":)" }
-</script>
+Vaidas Lamanauskas is a designer and technologist based in South Caucasus, often on the move and currently available for full-time or contract roles in design &amp; creative technology.
+<br/>
+<br/>
+He is broadly interested in digital interfaces and tends to position himself at the intersection of design and social impact.
+<br/>
+<br/>
+CV and work upon request.
+<br/>
+<br/>
+Wanna say hi? <a href="mailto:vaidas.lamanauskas@gmail.com">email</a> is the move.
+<br/>
+<br/>
+<img src="Vaidas-Lamanauskas_Yuba_01.png">
+<br/>
+<br/>
+<a href="">Yuba ↗</a> is a free online sustainable guide to Paris, Marseille, and Bordeaux, encouraging residents and visitors to support eco-friendly businesses with their purchasing power.
+<br/>
+<br/>
+<img src="Vaidas-Lamanauskas_Invisible-Directory_01.gif">
+<br/>
+<br/>
+<a href="">Invisible Directory ↗</a> is an online archive that gathers, organizes, and promotes beautiful projects that use the World Wide Web as a space to effectively communicate about important social, environmental, cultural, and economic issues.
+<div>
+  <marquee direction="right" scrollamount="4"><img src="Cloud.png"></marquee>
+  <marquee direction="right" scrollamount="3"><img src="Cloud.png"></marquee>
+  <marquee direction="right" scrollamount="1"><img src="Cloud.png"></marquee>
+  <marquee direction="right" scrollamount="2"><img src="Cloud.png"></marquee>
+  <marquee direction="right" scrollamount="1"><img src="Cloud.png"></marquee>
+  <img src="Window.png">
+</div>
+<marquee direction="left" scrollamount="7"><img src="Bird.gif"></marquee>
